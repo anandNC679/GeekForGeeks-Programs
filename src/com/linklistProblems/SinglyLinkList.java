@@ -1,7 +1,6 @@
 package com.linklistProblems;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
+import java.util.*;
 
 /**
  * author anand.
@@ -10,7 +9,6 @@ import java.util.LinkedHashSet;
 public class SinglyLinkList {
 
     Node head;
-
 
 
     class Node{
@@ -47,6 +45,33 @@ public class SinglyLinkList {
                 System.out.println("Loop not present:");
             }
             llist.detectLoopByIterative();
+    }
+
+    public void uniqueNodes() {
+        Map<Integer,Integer> listMap = new HashMap<>();
+        Node curr=head;
+        while (curr!=null){
+            if(listMap.containsKey(curr.data)){
+                int num=listMap.get(curr.data);
+                listMap.put(curr.data,num+1);
+            }
+            else
+                listMap.put(curr.data,1);
+            curr=curr.next;
+        }
+
+//        System.out.println();
+//        for(Integer num:listMap.keySet() ){
+//            System.out.print(num+" ");
+//        }
+
+        System.out.println();
+        listMap.entrySet().stream()
+                .forEach(pair->{
+                    if(pair.getValue()==1){
+                        System.out.print(pair.getKey()+" ");
+                    }
+                });
     }
 
     //iterative

@@ -6,11 +6,13 @@ import java.util.Scanner;
 /**
  * author anand.
  * since on 22/3/18.
+ * search key in given array using binary search
  */
 public class BinarySearch {
     public static void main(String args[]){
         int arr[]={12,43,45,23,44,87,98,67,51};
         BinarySearch binarySearch=new BinarySearch();
+        System.out.println("search key:- ");
         Scanner scanner=new Scanner(System.in);
         int key=scanner.nextInt();
         Arrays.sort(arr);

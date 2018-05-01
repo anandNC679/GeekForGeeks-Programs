@@ -79,11 +79,11 @@ public class CountWord {
 
     }
 
-    private static void countOneCharacterInString(String str1) {
+    private static void  countOneCharacterInString(String str1) {
         System.out.println("count all 'a' in :\n"+str1);
 
         int count=str1.length()-str1.replaceAll("a","").length();
-        System.out.println("total 'a'= "+count);
+        System.out.println("total 'a'= ");
     }
 
     private static void countAllWords(String str1) {

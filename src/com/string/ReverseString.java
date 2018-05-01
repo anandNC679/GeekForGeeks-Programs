@@ -1,5 +1,6 @@
 package com.string;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -12,7 +13,7 @@ public class ReverseString {
         String str="This is my book";
         String out="Book my is this";
 
-
+new ArrayList<>();
         String[] temp=str.split(" ");
         String result="";
         for(int i=0;i<temp.length;i++){

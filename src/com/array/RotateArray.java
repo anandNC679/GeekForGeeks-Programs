@@ -11,6 +11,8 @@ public class RotateArray {
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
         int arr[]={12,43,45,23,44,87,98,67,51};
+
+
         System.out.println("sorted array:");
         Arrays.sort(arr);
         printArray(arr);
@@ -23,8 +25,7 @@ public class RotateArray {
     }
 
     private static void printArray(int[] arr) {
-        for(int a:arr)
-            System.out.print( a+" ");
+        Arrays.stream(arr).forEach(i -> System.out.print(i+" "));
     }
 
     private static void rotateArray(int[] arr, int d) {

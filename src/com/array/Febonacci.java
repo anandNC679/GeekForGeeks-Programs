@@ -28,7 +28,7 @@ public class Febonacci {
                 case 2:
                     System.out.print("\nEnter n:");
                     len=scanner.nextInt();
-                    int result=febonacci.findFibonacci(len);
+                    int result=febonacci.fib(len);
                     System.out.println("\n"+result);
                     break;
 
@@ -38,6 +38,7 @@ public class Febonacci {
 
     static int fib(int n)
     {
+        System.out.print(n+" ");
         if (n <= 1)
             return n;
         return fib(n-1) + fib(n-2);

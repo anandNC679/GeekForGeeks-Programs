@@ -71,13 +71,17 @@ public class collection_sorting {
         List<Movie> movies=new ArrayList<>();
         movies.add(new Movie("Avatar", (float) 8.5,true));
         movies.add(new Movie("Avanger", (float) 5.5,true));
-        movies.add(new Movie("move so", (float) 0.5,false));
+        movies.add(new Movie("jayho", (float) 0.5,false));
         movies.add(new Movie("zero", (float) 4.5,true));
+
+       // movies.stream().sorted().forEach(i-> System.out.println(i));
 
         for(Movie movie:movies)
             System.out.println(movie);
         System.out.println("\nAfter sorting by ratting:");
         Collections.sort(movies,new SortByRating());
+
+
 
         for(Movie movie:movies)
             System.out.println(movie);
@@ -87,6 +91,5 @@ public class collection_sorting {
 
         for(Movie movie:movies)
             System.out.println(movie);
-
     }
 }

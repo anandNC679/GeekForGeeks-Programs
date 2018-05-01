@@ -10,7 +10,7 @@ import com.MapExamples.SortMapByValue;
 import java.util.*;
 
 
-public class Demo {
+public class CountCharInStr {
 
         public static void main(String[] args) {
 

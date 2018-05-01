@@ -4,21 +4,11 @@ package com.string;
  * author anand.
  * since on 20/3/18.
  */
-public class MaxRepeatingchar implements Runnable{
-
-
-        @Override
-        public void run() {
-
-        }
-
+public class MaxRepeatingchar {
 
     public static void main(String args[]){
+
         String str="aaaabbaabbbbbbbbccde";
-
-
-        MaxRepeatingchar myThread=new MaxRepeatingchar();
-        Thread thread=new Thread(myThread);
         char ch=str.charAt(0);
         int max_count=0;
         for(int i=0;i<str.length();i++){
